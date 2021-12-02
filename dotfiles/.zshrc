@@ -1,5 +1,10 @@
 source ~/.aliases
 
+
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
+
+
 # Kiwi.com SSH
 kiwi-vault-okta-login() {
     echo "Vault login with your Okta credentials"
