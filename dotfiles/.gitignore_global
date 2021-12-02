@@ -1,0 +1,12 @@
+# IDE
+.idea
+
+# Python
+venv
+.env
+
+# JS
+node_modules
+
+# Other
+.envrc

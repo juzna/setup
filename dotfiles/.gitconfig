@@ -1,0 +1,20 @@
+[user]
+  name = Jan Dolecek
+  email = jan.dolecek@kiwi.com
+
+[alias]
+  sync = !git pull origin master --rebase
+
+[core]
+  excludesfile = /Users/juzna/.gitignore_global
+  autocrlf = input
+
+[push]
+  #pushOptions = merge_request.create
+
+[filter "ignore_last_refresh"]
+  clean = sed '/last_refresh: /d'
+  smudge = cat
+
+[init]
+  defaultBranch = main

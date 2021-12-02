@@ -1,0 +1,23 @@
+# Load aliases
+
+# Kiwi.com: ssh to AWS via bastion
+alias sdev='ssh -A -t unseen@34.249.221.65 ssh '
+alias sfra='ssh -A -t unseen@18.184.139.168 ssh '
+alias sprod='ssh -A -t unseen@52.49.131.248 ssh '
+
+
+# kubernetes
+alias k=kubectl
+alias kcx=kubectx
+alias kns=kubens
+function kxbash() { kubectl exec -ti $@ bash; }
+function kxsh()   { kubectl exec -ti $@ sh; }
+
+# auto-complete for `k` for bash
+if [[ $0 == "-bash" ]]; then
+  complete -F __start_kubectl k
+fi
+
+
+# terrafrom
+alias tf=terraform
