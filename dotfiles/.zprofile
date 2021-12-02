@@ -8,7 +8,12 @@ export HISTFILESIZE=
 export HISTTIMEFORMAT="[%F %T] "
 
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
 # Use kiwi-scripts
-for f in ~/projects/platform/kiwi-scripts/scripts/*; do
-  source $f
-done
+if [[ -d $HOME/projects/platform/kiwi-scripts/scripts/ ]]; then
+  for f in $HOME/projects/platform/kiwi-scripts/scripts/*; do
+    source $f
+  done
+fi
