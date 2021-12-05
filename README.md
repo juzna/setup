@@ -54,7 +54,8 @@ Thoughts:
 ### [Moom](https://manytricks.com/moom/)
 * Why: Move windows via keyboard shortcuts
 * Install: via `mas` (**Do not install from cask, cannot transfer license**)
-* Preferences: `defaults import com.manytricks.Moom preferences/Moom.plist`
+* Preferences import: `plutil -convert xml1 preferences/Moom.plist.json -o - | defaults import com.manytricks.Moom -`
+* Preferences export: `defaults export com.manytricks.Moom - | plutil -convert json - -o - | jq > preferences/Moom.plist.json`
 
 
 ## Thoughts
