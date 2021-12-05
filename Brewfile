@@ -26,8 +26,10 @@ brew "kubectx"
 brew "mas"
 brew "mtr"
 brew "nvm"
+brew "php@8.0"
 brew "terraform"
 cask "1password"
+cask "alfred"
 cask "bettertouchtool"
 cask "clion"
 cask "docker"
@@ -62,7 +64,6 @@ mas "Keynote", id: 409183694
 mas "MindNode", id: 1289197285
 mas "Moom", id: 419330170
 mas "NordVPN", id: 905953485
-mas "NordVPN IKE", id: 1116599239
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "WhatsApp", id: 1147396723
