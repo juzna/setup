@@ -1,17 +1,7 @@
 {
   "BTTPresetName" : "Default",
-  "BTTPresetUUID" : "C1933121-42C4-457D-AC73-ED17137C304B",
+  "BTTPresetUUID" : "43D8E8E1-85F4-49D2-81FB-57BE8364353C",
   "BTTPresetContent" : [
-    {
-      "BTTAppBundleIdentifier" : "com.apple.finder",
-      "BTTAppName" : "Finder",
-      "BTTAppSpecificSettings" : {
-
-      },
-      "BTTTriggers" : [
-
-      ]
-    },
     {
       "BTTAppBundleIdentifier" : "BT.G",
       "BTTAppName" : "Global",
@@ -33,17 +23,17 @@
           "BTTAlternateIconData" : ""
         },
         {
-          "BTTTriggerType" : -1,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 118,
-          "BTTPredefinedActionName" : "Insert \/ Type \/ Paste Custom Text",
-          "BTTStringToType" : "✗",
+          "BTTPredefinedActionType" : 193,
+          "BTTPredefinedActionName" : "Type Custom Text",
+          "BTTStringToType" : "€",
+          "BTTMoveCursorLeftBy" : "0",
+          "BTTAdditionalConfiguration" : "524288",
+          "BTTTriggerOnDown" : 1,
           "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 40,
-          "BTTShortcutModifierKeys" : 786432,
-          "BTTOrder" : 2,
-          "BTTIconData" : "",
-          "BTTAlternateIconData" : ""
+          "BTTShortcutKeyCode" : 14,
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 5
         },
         {
           "BTTTriggerType" : -1,
@@ -59,24 +49,24 @@
           "BTTAlternateIconData" : ""
         },
         {
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTPredefinedActionType" : 118,
-          "BTTPredefinedActionName" : "Insert \/ Type \/ Paste Custom Text",
-          "BTTStringToType" : "prod-appengine",
-          "BTTMoveCursorLeftBy" : "0",
-          "BTTEnabled" : 1,
-          "BTTShortcutKeyCode" : 35,
-          "BTTShortcutModifierKeys" : 524288,
-          "BTTOrder" : 4,
-          "BTTIconData" : "",
-          "BTTAlternateIconData" : ""
-        },
-        {
           "BTTTriggerType" : -1,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTPredefinedActionType" : 118,
           "BTTPredefinedActionName" : "Insert \/ Type \/ Paste Custom Text",
+          "BTTStringToType" : "✗",
+          "BTTEnabled" : 1,
+          "BTTShortcutKeyCode" : 40,
+          "BTTShortcutModifierKeys" : 786432,
+          "BTTOrder" : 2,
+          "BTTIconData" : "",
+          "BTTAlternateIconData" : ""
+        },
+        {
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTPredefinedActionType" : 118,
+          "BTTPredefinedActionName" : "Insert \/ Type \/ Paste Custom Text",
           "BTTStringToType" : "→",
+          "BTTAdditionalConfiguration" : "786432",
           "BTTEnabled" : 1,
           "BTTShortcutKeyCode" : 47,
           "BTTShortcutModifierKeys" : 786432,
@@ -124,6 +114,16 @@
           "BTTIconData" : "",
           "BTTAlternateIconData" : ""
         }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTAppSpecificSettings" : {
+
+      },
+      "BTTTriggers" : [
+
       ]
     }
   ],

@@ -58,6 +58,14 @@ Thoughts:
 * Preferences export: `defaults export com.manytricks.Moom - | plutil -convert json - -o - | jq > preferences/Moom.plist.json`
 
 
+### BetterTouchTool
+* Why? Trackpad & keyboard shortcuts
+* Install: via brew (`cask "bettertouchtool"`)
+* License: in Google Drive
+* Preferences import: Manually, import the preset from preferences dir
+* Preferences export: Manually, export the *preset* 
+
+
 ## Thoughts
 
 ### dotfiles
