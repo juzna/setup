@@ -69,7 +69,7 @@ Thoughts:
 ### [PopClip](https://pilotmoon.com/popclip/)
 * Why? Toolbar with useful quick tools
 * Install: brew
-* Extensions:
+* Extensions: (requires php binary installed)
   ```sh
   open preferences/PopClip/Extensions/*.popclipext
   
@@ -77,7 +77,7 @@ Thoughts:
   open /tmp/*.popclipextz
   ```
 * Preferences:
-  * Enable Start at Login
+  * Enable Start at Login (not part of defaults)
 
 
 ## Thoughts
