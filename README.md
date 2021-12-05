@@ -73,8 +73,8 @@ Thoughts:
   ```sh
   open preferences/PopClip/Extensions/*.popclipext
   
-  curl -O "https://pilotmoon.com/popclip/extensions/ext/{Reminders,GoogleTranslate,Alfred,WorldCount,CharCount}.popclipextz"
-  open *.popclipextz
+  wget -P /tmp/ https://pilotmoon.com/popclip/extensions/ext/{Reminders,GoogleTranslate,Alfred,WordCount,CharCount}.popclipextz
+  open /tmp/*.popclipextz
   ```
 * Preferences:
   * Enable Start at Login

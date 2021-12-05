@@ -12,7 +12,7 @@
 			<key>Regular Expression</key>
 			<string>(?i)^\s*(\d+(?:[\.,]\d+)?)\s?(?:(?:pounds?|lbs?)|(?:ounces?|oz)|(?:centimetres?|centimeters?|cm)|(?:inches|inch|ins?|")|(?:feet|foot|ft|')|(?:yards?|yds?)|(?:miles?|mi)|(?:kilometres?|kilometers?|km?)|(?:kilograms?|kilos?|kg)|(?:grams?|g)|(?:metres?|meters?|m)|(?:°?F|(?:degrees?\s)?fahrenheit)|(?:°?C|(?:degrees?\s)?celsius|(?:degrees?\s)?centigrade)|(?:(?:millis|micros)(?:econds)?))\s*$</string>
 			<key>Script Interpreter</key>
-			<string>/usr/bin/php</string>
+			<string>/opt/homebrew/bin/php</string>
 			<key>Shell Script File</key>
 			<string>convert.php</string>
 			<key>Title</key>
