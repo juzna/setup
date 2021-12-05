@@ -66,6 +66,20 @@ Thoughts:
 * Preferences export: Manually, export the *preset* 
 
 
+### [PopClip](https://pilotmoon.com/popclip/)
+* Why? Toolbar with useful quick tools
+* Install: brew
+* Extensions:
+  ```sh
+  open preferences/PopClip/Extensions/*.popclipext
+  
+  curl -O "https://pilotmoon.com/popclip/extensions/ext/{Reminders,GoogleTranslate,Alfred,WorldCount,CharCount}.popclipextz"
+  open *.popclipextz
+  ```
+* Preferences:
+  * Enable Start at Login
+
+
 ## Thoughts
 
 ### dotfiles
