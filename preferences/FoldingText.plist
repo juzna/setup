@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultHideSyntax</key>
+	<true/>
+	<key>DefaultShowListBullets</key>
+	<true/>
+	<key>DefaultShowOutlineView</key>
+	<true/>
+	<key>DefaultTextSizeMultiplier</key>
+	<real>1</real>
+	<key>DefaultTypewriterScrolling</key>
+	<false/>
+	<key>DefaultWordCount</key>
+	<false/>
+	<key>DefaultWrapToColumn</key>
+	<integer>90</integer>
+	<key>LatestVersionUsed</key>
+	<string>770</string>
+	<key>MASPreferences Frame Top Left</key>
+	<string>{613, 2111}</string>
+	<key>MASPreferences PluginPreferences Frame</key>
+	<string>{{0, 0}, {600, 400}}</string>
+	<key>MASPreferences Selected Identifier View</key>
+	<string>PluginPreferences</string>
+	<key>NSDocumentSuppressTempVersionStoreWarning</key>
+	<true/>
+	<key>NSNavLastRootDirectory</key>
+	<string>/Volumes/GoogleDrive/My Drive/notes</string>
+	<key>NSNavLastUserSetHideExtensionButtonState</key>
+	<false/>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{841, 448}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
+	<key>NSWindow Frame FoldingTextDocumentWindowFrame</key>
+	<string>420 1243 840 1027 -926 1050 3440 1417 </string>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>-668 2010 427 279 -926 1050 3440 1417 </string>
+	<key>NSWindow Frame SoftwareDevelopmentKitWindow</key>
+	<string>520 332 640 410 -926 1050 3440 1417 </string>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<true/>
+	<key>WebAutomaticDashSubstitutionEnabled</key>
+	<false/>
+	<key>WebAutomaticQuoteSubstitutionEnabled</key>
+	<false/>
+	<key>WebAutomaticTextReplacementEnabled</key>
+	<false/>
+	<key>WebKit Web Inspector Setting - inspectorAttachedHeight</key>
+	<string>686</string>
+	<key>WebKitCacheModelPreferenceKey</key>
+	<integer>1</integer>
+	<key>WebKitDefaultFontSize</key>
+	<integer>16</integer>
+</dict>
+</plist>
