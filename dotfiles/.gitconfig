@@ -4,13 +4,21 @@
 
 [alias]
   sync = !git pull origin master --rebase
+  mwps = push -o merge_request.create -o merge_request.target=master -o merge_request.merge_when_pipeline_succeeds
+  fsync = !git fetch && git reset --hard \"origin/$(git branch --show-current)\"
+  ps = push -o ci.variable=AUTO_DEPLOY_SANDBOX=1
+  sm = !git fetch && cat .git/refs/remotes/origin/master > .git/refs/heads/master && git switch master --ignore-other-worktrees
+  wip = commit -a -n -m \"wip\"
+  review = !git reset --soft $(git merge-base HEAD origin/master)
+  wips = !git wip && git ps
 
 [core]
   excludesfile = /Users/juzna/.gitignore_global
   autocrlf = input
 
 [push]
-  #pushOptions = merge_request.create
+  autoSetupRemote = true
+  default = simple
 
 [filter "ignore_last_refresh"]
   clean = sed '/last_refresh: /d'
@@ -21,3 +29,16 @@
 
 [pull]
   ff = only
+
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+
+[rerere]
+  enabled = 1
+
+[rebase]
+  updateRefs = true
+  autoSquash = true
