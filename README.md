@@ -1,10 +1,24 @@
 # My Mac OS X Setup
 
 1. Install Homebrew:
-  `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+    ```shell
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
 
-1. Clone this repo:
-  `mkdir -p ~/projects/juzna; git clone https://github.com/juzna/setup.git ~/projects/juzna/setup`
+1. Prepare SSH keys: either copy from backup or generate new and add it to GitHub & GitLab.
+
+1. Clone this repo, private setup and company setup:
+    ```shell
+    mkdir -p ~/projects/juzna
+    git clone git@github.com:juzna/setup.git ~/projects/juzna/setup
+    git clone git@github.com:juzna/setup-private.git ~/projects/juzna/setup/private
+    git clone git@gitlab.skypicker.com:juzna/setup-company.git ~/projects/juzna/setup/company
+   ```
+   
+1. Unlock all git-crypt in all these repos:
+    ```shell
+    echo "<GIT-CRYPT-KEY>" | base64 -D | git-crypt unlock -
+    ```
 
 1. Install everything from Brewfile:
   `cd ~/projects/juzna/setup; brew bundle`
