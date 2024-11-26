@@ -1,12 +1,4 @@
-# Load aliases
-
-# Kiwi.com: ssh to AWS via bastion
-alias sdev='ssh -A -t unseen@34.249.221.65 ssh '
-alias sfra='ssh -A -t unseen@18.184.139.168 ssh '
-alias sprod='ssh -A -t unseen@52.49.131.248 ssh '
-
-
-# kubernetes
+# Kubernetes
 alias k=kubectl
 alias kcx=kubectx
 alias kns=kubens
@@ -19,5 +11,35 @@ if [[ $0 == "-bash" ]]; then
 fi
 
 
+# cd common paths
+alias cdm="cd ~/projects/autobooking/modules"
+alias cdd="cd ~/projects/autobooking/tooling/dispatcher"
+alias cdds="cd ~/projects/autobooking/tooling/deposit-checker"
+alias cdg="cd ~/projects/autobooking/tooling/granny"
+alias cdkca="cd ~/projects/autobooking/tooling/kw-client-auth"
+alias cds="cd ~/projects/autobooking/tooling/sherlog"
+
+
+# kubernetes for autobooking
+alias kcxp="kcx gke_pain_prod_eu-west1"
+alias kcxs="kcx gke_pain_sandbox_eu-west1"
+
+alias kp="kubectl --context=gke_pain_prod_eu-west1"
+alias ks="kubectl --context=gke_pain_sandbox_eu-west1"
+
+alias k9sp="k9s --context=gke_pain_prod_eu-west1"
+alias k9ss="k9s --context=gke_pain_sandbox_eu-west1"
+alias k9so="k9s --context=gke_autobooking-prod"
+alias k9sa="k9s --context=gke_autobooking-sandbox"
+
+alias k9sd="k9s --context=gke_pain_prod_eu-west1 -n dispatcher -c deploy"
+alias k9sm="k9s --context=gke_pain_prod_eu-west1 -n modules -c deploy"
+alias k9sms="k9s --context=gke_pain_prod_eu-west1 -n modules-staging -c deploy"
+
+
 # terrafrom
 alias tf=terraform
+
+
+# pre-commit
+alias pre-commit-changes='pre-commit run --files $(git diff --name-only master...$(git rev-parse --abbrev-ref HEAD))'
